@@ -93,7 +93,7 @@ const config: DocsThemeConfig = {
   footer: { component: () => null },
   head: Head,
   logo: Logo,
-  logoLink: "og.jpg",
+  logoLink: "/",
   nextThemes: {
     defaultTheme: "system",
   },
