@@ -1,0 +1,11 @@
+{
+  "index": "Вступление",
+  "queries": "Queries (Запросы)",
+  "arguments": "Параметры",
+  "project-link": {
+    "title": "Сибириана API ↗",
+    "type": "page",
+    "href": "https://api.siberiana.online",
+    "newWindow": true
+  }
+}

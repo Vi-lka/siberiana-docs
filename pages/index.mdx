@@ -1,0 +1,97 @@
+import { Steps } from "nextra-theme-docs";
+import { Cards, Card } from 'nextra/components'
+import Image from 'next/image'
+import { Callout } from 'nextra/components'
+
+
+# Документация
+
+## GraphQL
+
+Наш API использует язык запросов [GraphQL](https://graphql.org/). Вы можете ознакомиться с принцинципами его работы по данным ссылкам:
+
+<Cards>
+  <Card
+    title="GraphQL"
+    href="https://graphql.org/"
+    target="__blank"
+  />
+  <Card
+    title="Apollo GraphQL Tutorials"
+    href="https://www.apollographql.com/tutorials/"
+    target="__blank"
+  />
+  <Card
+    title="Хабр (Что такое GraphQL)"
+    href="https://habr.com/ru/articles/765064/"
+    target="__blank"
+  />
+</Cards>
+
+## API vs Sandbox
+
+Наш API полностью открытый для чтения данных. Вы можете получить любую интересующую Вас информацию для исследования, создания приложений или API.
+
+Для работы с данными вы можете использовать наш API:
+  1. Напрямую с любым языком программирования; 
+  2. Воспользоваться ПО по типу [Postman](https://www.postman.com/);
+  3. Воспользоваться [Sandbox](https://api.siberiana.online/);
+
+Первых два варианта больше подойдут специалистам, имеющим опыт работы с **GraphQL**, языками программирования и спец. ПО.
+
+Для [Sandbox](https://api.siberiana.online/) не требуется профильных навыков, и изучения документации должно хватить для полноценной работы с ней.
+
+
+## Начало работы c Sandbox
+
+<Steps>
+
+### Sandbox
+ 
+Для работы с API через песочницу можно воспользовать двумя вариантами:
+ 
+<Cards>
+  <Card
+    title="Песочница Sibiriana"
+    href="https://api.siberiana.online/"
+    target="__blank"
+  />
+  <Card
+    title="Песочница Apollo"
+    href="https://studio.apollographql.com/sandbox/explorer"
+    target="__blank"
+  />
+</Cards>
+
+Во втором варианте нужно будет вставить в поле url API: `https://api.siberiana.online/graphql`
+
+<Image src="/content/graphql-field.png" alt="graphql-field" width={500} height={500} />
+
+### Query
+
+Для составления запроса можно воспользоваться **Меню** слева (**Documentation**), либо же печатать прямо во вкладке **Operation**.
+
+<Image src="/content/graphql-query.png" alt="graphql-query" width={1000} height={1000} />
+ 
+<Callout type="info" emoji="ℹ️">
+  Подбонее о составлении Query можно ознакомиться в разделе [Queries (Запросы)](/queries).
+</Callout>
+
+### Response
+
+С результатами Query можно ознакомиться во вкладке справа **Response**.
+
+<Image src="/content/graphql-response.png" alt="graphql-response" width={1000} height={1000} />
+
+Данные могуть быть представлены в двух форматах [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) и [CSV](https://ru.wikipedia.org/wiki/CSV).
+
+</Steps>
+
+## Схема
+
+Ознакомиться со схемой API можно во вкладке **Schema**. 
+
+<Image src="/content/graphql-schema.png" alt="graphql-schema" width={1000} height={1000} />
+
+Однако большая часть информации от туда будет приведена далее в данной документации на русском языке. 
+Используйте что вам удобнее.
